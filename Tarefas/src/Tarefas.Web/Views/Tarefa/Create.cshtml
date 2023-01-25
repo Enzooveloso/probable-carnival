@@ -1,0 +1,10 @@
+@model Tarefas.Web.Models.TarefaViewModel
+
+<form asp-action="Create">
+    @Html.LabelFor(model => model.Titulo, new {@class = "form-label "})
+    @Html.TextBoxFor(model => model.Titulo, new {@class = "form-cont"})
+    @Html.LabelFor(model => model.Descricao, new {@class = "form-label"})
+    @Html.TextBoxFor(model => model.Descricao, new {@class = "form-cont"})
+    <input type="Submit"/>
+    
+</form>
